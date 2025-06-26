@@ -11,6 +11,23 @@ body{
 background:#ffffff;
 }
 
+@keyframes loop-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Skill.jsx */
+@keyframes loop-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-loop-scroll {
+  animation: loop-scroll 30s linear infinite;
+}
+
+
+
 /* :root {
   --background: #ffffff;
   --foreground: #171717;

@@ -49,7 +49,7 @@ return (
         </div>
 
         {/* Right */}
-        <div className="relative w-full flex justify-center">
+        <div className="relative w-full flex justify-center my-5">
         {/* Foto Profil */}
         <img
             src="ipul.jpeg" // Ganti dengan foto kamu
