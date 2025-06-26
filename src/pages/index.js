@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Hero  from '../components/Hero';
-// import About from '../components/About';
-// import Skills from '../components/Skills';
+import Skills from '../components/Skills';
 // import Project from '../components/Project';
 // import Testimonials from '../components/Testimonials';
 // import Contact from '../components/Contact';
@@ -17,8 +16,7 @@ export default function Home(){
       </Head>
       <main className='body'>
         <Hero/>
-        {/* <About/> */}
-        {/* <Skills/> */}
+        <Skills/>
         {/* <Project/> */}
         {/* <Testimonials/> */}
         {/* <Contact/> */}
