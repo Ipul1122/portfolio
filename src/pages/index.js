@@ -15,7 +15,7 @@ export default function Home(){
         <title>Portfolio Muhammad Syaifulloh</title>
         <meta name="description" content="Portfolio of Muhammad Syaifulloh" />
       </Head>
-      <main className='bg-white text-gray-800'>
+      <main className='body'>
         <Hero/>
         {/* <About/> */}
         {/* <Skills/> */}
