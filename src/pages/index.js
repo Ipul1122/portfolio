@@ -1,9 +1,10 @@
 import Head from 'next/head';
+import Navbar from '../components/Navbar';
 import Hero  from '../components/Hero';
 import Skills from '../components/Skills';
-// import Project from '../components/Project';
+import Project from '../components/Project';
 // import Testimonials from '../components/Testimonials';
-// import Contact from '../components/Contact';
+import Contact from '../components/Contact';
 
 
 export default function Home(){
@@ -15,11 +16,12 @@ export default function Home(){
         <meta name="description" content="Portfolio of Muhammad Syaifulloh" />
       </Head>
       <main className='body'>
+        <Navbar/>
         <Hero/>
         <Skills/>
-        {/* <Project/> */}
+        <Project/>
         {/* <Testimonials/> */}
-        {/* <Contact/> */}
+        <Contact/>
       </main>
     </div>
   )
