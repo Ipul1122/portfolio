@@ -5,7 +5,7 @@ import { useState } from 'react';
 export default function Hero() {
 
     const [showFullText, setShowFullText] = useState(false);
-    const textOverflow = "Final-year Management Informatics student passionate about building websites. I integrate AI tools to boost efficiency and innovation. Strong in communication, teamwork, and adaptability. Open to feedback and continuous learning. "
+    const textOverflow = "Mahasiswa tingkat akhir Manajemen Informatika yang antusias dalam pengembangan situs web, baik statis maupun dinamis. Menggabungkan teknologi AI untuk menciptakan solusi yang efisien dan inovatif. Memiliki kemampuan komunikasi yang baik, kolaboratif dalam tim, serta cepat beradaptasi dengan perubahan. Selalu terbuka terhadap kritik membangun dan berkomitmen pada pembelajaran berkelanjutan."
     const limited = textOverflow.length > 30 ? textOverflow.slice(0, 32) + '...' : textOverflow;
 
 return (
@@ -59,9 +59,9 @@ return (
 
         {/* Ikon Mengambang */}
         <FaHtml5 className="text-orange-600 text-3xl absolute top-0 left-12 animate-bounce" />
-        <FaReact className="text-blue-500 text-3xl absolute top-1/4 right-10 animate-bounce delay-100" />
-        <FaLaravel className="text-red-600 text-3xl absolute bottom-1/4 left-6 animate-bounce delay-200" />
-        <SiNextdotjs className="text-black text-3xl absolute bottom-0 right-10 animate-bounce delay-300" />
+        {/* <FaReact className="text-blue-500 text-3xl absolute top-1/4 right-10 animate-bounce delay-100" /> */}
+        {/* <FaLaravel className="text-red-600 text-3xl absolute bottom-1/4 left-6 animate-bounce delay-200" /> */}
+        <FaLaravel className="text-red-700 text-3xl absolute bottom-0 right-10 animate-bounce delay-300" />
         </div>
     </div>
     </section>
