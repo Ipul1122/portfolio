@@ -58,10 +58,10 @@ return (
         />
 
         {/* Ikon Mengambang */}
-        <FaHtml5 className="text-orange-600 text-3xl absolute top-0 left-1/4 animate-bounce" />
-        <FaReact className="text-blue-500 text-3xl absolute top-1/4 right-14 animate-bounce delay-100" />
-        <FaLaravel className="text-red-600 text-3xl absolute bottom-1/4 left-14 animate-bounce delay-200" />
-        <SiNextdotjs className="text-black text-3xl absolute bottom-0 right-1/4 animate-bounce delay-300" />
+        <FaHtml5 className="text-orange-600 text-3xl absolute top-0 left-12 animate-bounce" />
+        <FaReact className="text-blue-500 text-3xl absolute top-1/4 right-10 animate-bounce delay-100" />
+        <FaLaravel className="text-red-600 text-3xl absolute bottom-1/4 left-6 animate-bounce delay-200" />
+        <SiNextdotjs className="text-black text-3xl absolute bottom-0 right-10 animate-bounce delay-300" />
         </div>
     </div>
     </section>

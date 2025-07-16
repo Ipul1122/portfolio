@@ -60,16 +60,14 @@ return (
                 <div className="text-sm">
                     <p className="font-semibold">Februari - Mei 2025</p>
                     <p>Magang di PT. Radar Teknologi Komputer (IT and Edutech Solutions)</p>
-                    <p className="text-gray-500 dark:text-gray-400">
-                        
-                            <li>Mengerjakan project mengenai story telling atas bencana alam yang disebabkan oleh manusia.</li>
-                        
-                            <li>Membangun portfolio dinamis menggunakan laravel.</li>
-                        
-                            <li>Mengembangkan project bisnis laundry.</li>
-                    </p>
+                    <ul className="list-disc ml-5 text-gray-500 dark:text-gray-400 mt-2 space-y-1">
+                    <li>Mengerjakan project mengenai story telling atas bencana alam yang disebabkan oleh manusia.</li>
+                    <li>Membangun portfolio dinamis menggunakan Laravel.</li>
+                    <li>Mengembangkan project bisnis laundry.</li>
+                    </ul>
                 </div>
                 </li>
+
             </ul>
             </div>
         </div>
