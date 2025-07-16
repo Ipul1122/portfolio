@@ -18,7 +18,6 @@ const handleSend = (e) => {
     // Enkode pesan untuk URL ke whatsapp
     const message = `Halo, Kak saya ${nama}%0ANo Telp : ${telepon}%0APesan :${encodeURIComponent(pesan)}`;
 
-
     // Ganti nomor WhatsApp tujuan di bawah ini
     const nomorTujuan = "6285693672730";
     const url = `https://wa.me/${nomorTujuan}?text=${message}`;
@@ -27,9 +26,9 @@ const handleSend = (e) => {
 };
 
 return (
-    <section id="contact" className="py-16 bg-white">
+    <section id="contact" className="py-16 bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800 dark:bg-gradient-to-br dark:from-slate-900 dark:via-gray-900 dark:to-slate-800">
     <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">Kontak Saya</h2>
+        <h2 className="text-3xl font-bold text-center mb-10 text-white dark:text-white">Kontak Saya</h2>
 
         <div className="grid md:grid-cols-2 gap-10">
         {/* Google Maps */}
@@ -42,17 +41,17 @@ return (
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className="rounded-xl shadow"
+            className="rounded-xl shadow-lg"
             ></iframe>
         </div>
 
         {/* Form */}
         <form
             onSubmit={handleSend}
-            className="bg-blue-100 p-6 rounded-xl shadow space-y-4"
+            className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 p-6 rounded-xl shadow-lg space-y-4"
         >
             <div>
-            <label className="block text-sm font-medium text-gray-700">Nama</label>
+            <label className="block text-sm font-medium text-gray-300 dark:text-white">Nama</label>
             <input
                 type="text"
                 name="nama"
@@ -60,12 +59,12 @@ return (
                 onChange={handleChange}
                 required
                 placeholder="Masukkan nama anda"
-                className="mt-1 block w-full p-2 border border-blue-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200"
+                className="mt-1 block w-full p-2 bg-slate-700/50 border border-slate-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             />
             </div>
 
             <div>
-            <label className="block text-sm font-medium text-gray-700">No. Telepon</label>
+            <label className="block text-sm font-medium text-gray-300 dark:text-white">No. Telepon</label>
             <input
                 type="tel"
                 name="telepon"
@@ -74,12 +73,12 @@ return (
                 required
                 pattern="[0-9]+"
                 placeholder="081234567890"
-                className="mt-1 block w-full p-2 border border-blue-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200"
+                className="mt-1 block w-full p-2 bg-slate-700/50 border border-slate-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             />
             </div>
 
             <div>
-            <label className="block text-sm font-medium text-gray-700">Pesan</label>
+            <label className="block text-sm font-medium text-gray-300 dark:text-white">Pesan</label>
             <textarea
                 name="pesan"
                 value={form.pesan}
@@ -87,13 +86,13 @@ return (
                 required
                 rows="4"
                 placeholder="Halo, saya mau berbisnis dengan Anda..."
-                className="mt-1 block w-full p-2 border border-blue-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200"
+                className="mt-1 block w-full p-2 bg-slate-700/50 border border-slate-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
             ></textarea>
             </div>
 
             <button
             type="submit"
-            className="w-full py-2 px-4 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 transition"
+            className="w-full py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-slate-800"
             >
             Kirim ke WhatsApp
             </button>
