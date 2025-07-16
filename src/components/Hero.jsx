@@ -5,26 +5,26 @@ import { useState } from 'react';
 export default function Hero() {
 
     const [showFullText, setShowFullText] = useState(false);
-    const textOverflow = "A final undergraduate management informatics students. I do love building a website from static and dynamic. Able to work alone or with team, good communication, highly adaptable to new environments, and willingly accept critiscm as a contribution for efficiency. "
+    const textOverflow = "Final-year Management Informatics student passionate about building websites. I integrate AI tools to boost efficiency and innovation. Strong in communication, teamwork, and adaptability. Open to feedback and continuous learning. "
     const limited = textOverflow.length > 30 ? textOverflow.slice(0, 32) + '...' : textOverflow;
 
 return (
     <section
     id="hero"
-    className="min-h-screen flex items-center justify-center bg-white px-6"
+    className="min-h-screen flex items-center justify-center bg-white px-6 dark:bg-neutral-900 "
     >
-    <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center dark:text-white">
         {/* Left Section */}
         <div className="space-y-6">
-        <p className="text-lg text-gray-700 ">Hey, I'm Muhammad Syaifulloh 👋</p>
+        <p className="text-lg text-gray-700 dark:text-white">Hey, I'm Muhammad Syaifulloh 👋</p>
 
         <h1 className="text-6xl font-extrabold leading-tight">
             <span className="text-blue-600">Junior</span>
-            <span className="text-gray-900"> Web</span> <br />
-            <span className="text-gray-900">Developer</span>
+            <span className="text-gray-900 dark:text-white"> Web</span> <br />
+            <span className="text-gray-900 dark:text-white">Developer</span>
         </h1>
 
-        <p className="text-lg text-gray-600 max-w-xl">
+        <p className="text-lg text-gray-600 max-w-xl dark:text-white text-justify">
             {showFullText ? textOverflow : limited}
         </p>
         <button onClick={() => setShowFullText(!showFullText)}
@@ -41,7 +41,7 @@ return (
             </a>
             <a
             href="#projects"
-            className="border border-blue-800 text-gray-900 px-5 py-2 rounded-md font-medium hover:bg-gray-100 transition"
+            className="border border-blue-800 text-gray-900 px-5 py-2 rounded-md font-medium hover:bg-black transition dark:text-white"
             >
             My Projects
             </a>

@@ -43,13 +43,13 @@ setCurrentIndex((prevIndex) => (prevIndex === projects.length - 1 ? 0 : prevInde
 const project = projects[currentIndex];
 
 return (
-<section id="projects" className="py-16 bg-gray-50">
+<section id="projects" className="py-16 bg-gray-50 dark:bg-neutral-900">
     <div className="container mx-auto px-4">
-    <h2 className="text-3xl font-bold mb-10 text-center text-gray-800">Project Saya</h2>
+    <h2 className="text-3xl font-bold mb-10 text-center text-gray-800 dark:text-white">Project Saya</h2>
 
     <div className="relative max-w-3xl mx-auto ">
         {/* Project Card */}
-        <div className="bg-white rounded-2xl shadow-md overflow-hidden transition hover:shadow-xl">
+        <div className="bg-white dark:bg-neutral-800 rounded-2xl shadow-md overflow-hidden transition hover:shadow-xl">
         <Image
             src={project.image}
             alt={project.title}
@@ -57,12 +57,12 @@ return (
             height={400}
             className="w-full object-cover h-56"
         />
-        <div className="p-6 flex flex-col items-center text-center gap-y-4">
-            <h3 className="text-xl font-semibold text-gray-900 text-center">{project.title}</h3>
-            <p className="mt-2 text-gray-600">{project.description}</p>
+        <div className="p-6 flex flex-col items-center text-center gap-y-4 ">
+            <h3 className="text-xl font-semibold text-gray-900 text-center dark:text-white">{project.title}</h3>
+            <p className="mt-2 text-gray-600 dark:text-white">{project.description}</p>
 
             <div className="mt-4">
-            <p className="sm:text-sm md:text-xl lg:text-2xl font-medium text-gray-700 mb-5">Teknologi:</p>
+            <p className="sm:text-sm md:text-xl lg:text-2xl font-bold text-gray-700 mb-5 dark:text-white">Teknologi:</p>
             <div className="flex flex-wrap items-center gap-4">
                 {project.technologies.map((tech, idx) => (
                 <div key={idx} className="relative group">
@@ -89,7 +89,7 @@ return (
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 bg-gray-800 text-white text-sm rounded-lg hover:bg-gray-700 transition"
+                className="px-4 py-2 bg-white text-black text-sm rounded-lg hover:bg-gray-700 transition"
             >
                 GitHub
             </a>
@@ -106,7 +106,7 @@ return (
         </div>
 
         {/* Tombol Navigasi */}
-        <div className="absolute inset-y-0 left-0 flex items-center">
+        <div className="absolute inset-y-0 left-0 flex items-center ml-2 mb-4">
         <button
             onClick={handlePrev}
             className="p-2 rounded-full bg-white shadow hover:bg-gray-100 transition"
@@ -115,7 +115,7 @@ return (
             <ChevronLeft />
         </button>
         </div>
-        <div className="absolute inset-y-0 right-0 flex items-center">
+        <div className="absolute inset-y-0 right-0 flex items-center mr-2 mb-4">
         <button
             onClick={handleNext}
             className="p-2 rounded-full bg-white shadow hover:bg-gray-100 transition"

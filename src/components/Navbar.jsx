@@ -12,11 +12,11 @@ const toggleDark = () => {
 };
 
 return (
-    <header className="sticky top-0 z-50 bg-white dark:bg-gray-900 shadow-md">
+    <header className="sticky top-0 z-50 bg-white dark:bg-neutral-900 shadow-md">
     <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         {/* Kiri: Nama */}
         <div className="text-lg font-bold text-gray-800 dark:text-white">
-        Muhammad
+        Muhammad Syaifulloh
         </div>
 
         {/* Tengah: Menu Navigasi */}
