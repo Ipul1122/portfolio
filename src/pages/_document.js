@@ -7,6 +7,7 @@ export default function Document() {
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Portofolio Muhammad Syaifulloh" />
         <meta property="og:title" content="/project/portfolio.jpg" />
+        <meta property="og:title" content="Portofolio Muhammad Syaifulloh" />
         <meta property="og:description" content="Mahasiswa Informatika yang membangun website Laravel, React, dan Tailwind CSS" />
         <meta property="og:image" content="https://portfolio-muhammad.vercel.app/preview.jpg" />
         <meta property="og:url" content="https://portfolio-muhammad.vercel.app" />
