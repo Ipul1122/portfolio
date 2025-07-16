@@ -22,6 +22,7 @@ return (
         {/* Tengah: Menu Navigasi */}
         <ul className="hidden md:flex space-x-8 text-gray-700 dark:text-gray-100 font-medium">
         <li><a href="#hero" className="hover:text-blue-500 transition">Home</a></li>
+        <li><a href="#about" className="hover:text-blue-500 transition">About</a></li>
         <li><a href="#skills" className="hover:text-blue-500 transition">Skills</a></li>
         <li><a href="#projects" className="hover:text-blue-500 transition">Projects</a></li>
         <li><a href="#contact" className="hover:text-blue-500 transition">Kontak</a></li>

@@ -8,26 +8,32 @@ const [currentIndex, setCurrentIndex] = useState(0);
 const projects = [
 {
     title: "Sistem Presensi TPA",
-    description: "Website presensi murid TPA berbasis Laravel dengan fitur absensi, jadwal, statistik, dan notifikasi.",
-    image: "/projects/tpa-presensi.png",
+    description: "Proses tugas akhir membuat Website presensi murid TPA berbasis Laravel dengan fitur absensi, jadwal, statistik, dan notifikasi.",
+    image: "/project/project_ta.jpg",
     github: "https://github.com/Ipul1122/management-presensi-",
     live: "https://tpa-presensi.vercel.app",
+    figma: "https://www.figma.com/design/3EVZADv2KtLwduSyiEvFSw/Mockup_Ta?node-id=0-1&t=WHn8alwPnoXfl9WN-1",
     technologies: [
     { name: "Laravel", icon: "/skills-icons/programmingIcons/laravel-icon.svg" },
     { name: "Tailwind CSS", icon: "/skills-icons/programmingIcons/tailwindcss-icon.svg" },
     { name: "MySQL", icon: "/skills-icons/programmingIcons/mysql-icon.svg" },
+    { name: "Figma", icon: "/skills-icons/toolsIcon/figma-icon.svg" },
+    { name: "github", icon: "/skills-icons/toolsIcon/github-icon.svg" },
+    { name: "draw.io", icon: "/skills-icons/toolsIcon/drawio-icon.svg" },
+    { name: "chat-gpt", icon: "/skills-icons/toolsIcon/ai-icon.svg" },
     ],
 },
 {
     title: "Portofolio Pribadi",
-    description: "Website portofolio untuk menampilkan informasi pribadi, skill, project, dan kontak.",
-    image: "/projects/portfolio.png",
-    github: "https://github.com/Ipul1122",
-    live: "https://portfolio-muhammad.vercel.app",
+    description: "Membangun website portofolio untuk menampilkan informasi pribadi, about, skill, project, dan kontak.",
+    image: "/project/portfolio.jpg",
+    github: "https://github.com/Ipul1122/portfolio",
+    // live: "https://portfolio-muhammad.vercel.app",
     technologies: [
-    { name: "React JS", icon: "/tech/react.png" },
-    { name: "Next.js", icon: "/tech/nextjs.png" },
-    { name: "Tailwind CSS", icon: "/tech/tailwind.png" },
+    { name: "React JS", icon: "/skills-icons/programmingIcons/react-icon.svg" },
+    { name: "Next.js", icon: "/skills-icons/programmingIcons/nextJs-icon.svg" },
+    { name: "Tailwind CSS", icon: "/skills-icons/programmingIcons/tailwindcss-icon.svg"},
+    { name: "github", icon: "/skills-icons/toolsIcon/github-icon.svg" },
     ],
 },
 ];
@@ -89,10 +95,11 @@ return (
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 bg-white text-black text-sm rounded-lg hover:bg-gray-700 transition"
+                className="px-4 py-2 bg-black text-white dark:bg-white dark:text-black text-sm rounded-lg hover:bg-gray-700 transition"
             >
                 GitHub
             </a>
+            {project.live && (
             <a
                 href={project.live}
                 target="_blank"
@@ -101,6 +108,18 @@ return (
             >
                 Live Demo
             </a>
+            )}
+                {project.figma && (
+            <a
+            href={project.figma}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 transition"
+            >
+            Figma Design
+            </a>
+            )}
+
             </div>
         </div>
         </div>
