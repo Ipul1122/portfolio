@@ -79,7 +79,7 @@ return (
 			</div>
 		</div>
 	</div>
-	<div className="py-6 text-sm text-center dark:text-gray-600">
+	<div className="py-6 text-sm text-center text-black dark:text-white">
 		© {new Date().getFullYear()} Muhammad Syaifulloh. All rights reserved.
 </div>
 
