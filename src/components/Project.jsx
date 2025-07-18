@@ -19,7 +19,7 @@ const projects = [
     { name: "MySQL", icon: "/skills-icons/programmingIcons/mysql-icon.svg" },
     { name: "Figma", icon: "/skills-icons/toolsIcon/figma-icon.svg" },
     { name: "github", icon: "/skills-icons/toolsIcon/github-icon.svg" },
-    { name: "draw.io", icon: "/skills-icons/toolsIcon/drawio-icon.svg" },
+    { name: "draw.io", icon: "/skills-icons/toolsIcon/drawIo-icon.svg" },
     { name: "chat-gpt", icon: "/skills-icons/toolsIcon/ai-icon.svg" },
     ],
 },
