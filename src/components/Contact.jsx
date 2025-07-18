@@ -26,7 +26,7 @@ return (
     className="py-16 bg-gradient-to-br bg:white dark:bg-gradient-to-br dark:from-slate-900 dark:via-gray-900 dark:to-slate-800"
     >
     <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-10 text-white dark:text-white">Kontak Saya</h2>
+        <h2 className="text-3xl font-bold text-center mb-10 text-black dark:text-white">Kontak Saya</h2>
 
         <div className="flex justify-center">
         <form
@@ -34,7 +34,7 @@ return (
             className="w-full max-w-md bg-white dark:bg-slate-700/50 backdrop-blur-sm border border-slate-700/50 p-6 rounded-xl shadow-lg space-y-4"
         >
             <div>
-            <label className="block text-sm font-medium text-gray-300 dark:text-white">Nama</label>
+            <label className="block text-sm font-medium text-black dark:text-white">Nama</label>
             <input
                 type="text"
                 name="nama"
@@ -42,12 +42,12 @@ return (
                 onChange={handleChange}
                 required
                 placeholder="Masukkan nama anda"
-                className="mt-1 block w-full p-2 bg-white dark:bg-slate-700/50 border border-slate-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="mt-1 block w-full p-2 bg-white dark:bg-slate-700/50 border border-slate-600 rounded-md text-black dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             />
             </div>
 
             <div>
-            <label className="block text-sm font-medium text-gray-300 dark:text-white">No. Telepon</label>
+            <label className="block text-sm font-medium text-black dark:text-white">No. Telepon</label>
             <input
                 type="tel"
                 name="telepon"
@@ -56,12 +56,12 @@ return (
                 required
                 pattern="[0-9]+"
                 placeholder="081234567890"
-                className="mt-1 block w-full p-2 bg-white dark:bg-slate-700/50 border border-slate-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="mt-1 block w-full p-2 bg-white dark:bg-slate-700/50 border border-slate-600 rounded-md text-black dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             />
             </div>
 
             <div>
-            <label className="block text-sm font-medium text-gray-300 dark:text-white">Pesan</label>
+            <label className="block text-sm font-medium text-black dark:text-white">Pesan</label>
             <textarea
                 name="pesan"
                 value={form.pesan}
@@ -69,7 +69,7 @@ return (
                 required
                 rows="4"
                 placeholder="Halo, saya mau berbisnis dengan Anda..."
-                className="mt-1 block w-full p-2 bg-white dark:bg-slate-700/50 border border-slate-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+                className="mt-1 block w-full p-2 bg-white dark:bg-slate-700/50 border border-slate-600 rounded-md text-black dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
             ></textarea>
             </div>
 

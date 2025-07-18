@@ -34,7 +34,8 @@ return (
 
         <div className="flex gap-4">
             <a
-            href="#contact"
+            href="muhammad-syaifulloh.pdf"
+            target='_blank'
             className="bg-blue-600 text-white px-5 py-2 rounded-md font-medium hover:bg-blue-700 transition"
             >
             My Resume
